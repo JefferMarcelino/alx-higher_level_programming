@@ -11,8 +11,10 @@ def new_in_list(my_list, idx, element):
     Return:
         The new list
     """
-    if len(my_list) - 1 < idx or idx < 0:
-        return (None)
     new_list = my_list[:]
+
+    if len(my_list) - 1 < idx or idx < 0:
+        return (new_list)
+
     new_list[idx] = element
     return (new_list)
